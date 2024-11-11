@@ -1,0 +1,273 @@
+.about{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:50px 120px;
+}
+
+.about-title{
+  position:relative;
+}
+.about-title h1{
+  padding: 0px 30px;
+  font-size: 60px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.about-section{
+  display: flex;
+  gap:40px;
+  justify-content: center;
+  align-items:center;
+}
+
+.about-right{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.about-left{
+  width:100%;
+  height: 100%;
+}
+.about-left img{
+  width:100%;
+  height: 100%;
+}
+
+.about-para{
+  display:flex;
+  flex-direction: column;
+  font-size:24px;
+  font-weight: 500;
+  width:70%;
+  align-items: center;
+  justify-content: center;
+  margin-left:45px;
+}
+.about-para p{
+  line-height: 35px;
+}
+
+.about-skills{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  gap:20px;
+  width:100%;
+}
+
+.about-skill{
+  display:flex;
+  gap:50px;
+  align-items: center;
+  transition: .3s;
+  position: relative;
+}
+
+.about-skill p{
+  min-width:150px;
+  font-size:24px;
+  font-weight:500;
+}
+
+.progress-bar{
+  background: #90b3fa;
+  width:430px;
+  height:10px;
+  border-radius: 5px;
+}
+.progress-bar div{
+  height:10px;
+  border-radius:5px;
+  width:0%;
+}
+.progress-bar div span{
+  height:50px;
+  width:50px;
+  border-radius: 50%;
+  background:linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  float:right;
+  margin-top:-22px;
+  margin-right:-20px;
+  padding:10px;
+  color:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.html{
+  background: #e91e63;
+  animation:html 1s linear forwards;
+}
+.react{
+  background: #00bcd4;
+  animation:react 1s linear forwards;
+}
+.javascript{
+  background: #f6ffa1;
+  animation:javascript 1s linear forwards;
+
+}
+.graphic{
+  background: #9c27b0;
+  animation:graphic 1s linear forwards;
+
+}
+.php{
+  background: #ffeb3b;
+  animation:php 1s linear forwards;
+
+}
+.about-skill:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+.html span{
+  border: 2px solid #1ee92f;
+}
+.react span{
+  border: 2px solid #f7f7f7;
+}
+.javascript span{
+  border: 2px solid #a09cf8;
+}
+.graphic span{
+  border: 2px solid #078a1d;
+
+}
+.php span{
+  border: 2px solid #000601;
+}
+
+@keyframes html {
+  100%{
+    width:70%;
+  }
+}
+@keyframes react {
+  100%{
+    width:60%;
+  }
+}
+@keyframes javascript {
+  100%{
+    width:50%;
+  }
+}
+
+@keyframes graphic {
+  100%{
+    width:55%;
+  }
+}
+
+@keyframes php {
+  100%{
+    width:60%;
+  }
+}
+
+@media(max-width:991px){
+  .about-left{
+    display:none;
+  }
+}
+
+
+@media(max-width:768px){
+  .about{
+    margin:50px;
+    align-items:start;
+    width:100%;
+  }
+  .about-title h1{
+    font-size:30px;
+    padding:0;
+  }
+  .about-section{
+    flex-direction:column;
+    width:100%;
+    gap:30px;
+  }
+  
+  .about-right{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .about-para{
+    font-size:18px;
+    line-height: 32px;
+    margin-left:-2px;
+  }
+  .about-skills{
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    width:100%;
+   
+  }
+  .progress-bar div span{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background:linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    float:right;
+    margin-top:-15px;
+    margin-right:-20px;
+    padding:10px;
+    color:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+  .about-skill p{
+    font-size:20px;
+  }
+  .progress-bar{
+    width:200px;
+    height: 7px;
+  }
+  .progress-bar div{
+    height: 7px;
+  }
+  .progress-bar div span{
+    font-size:12px;
+    height:30px;
+    width:30px;
+  }
+  .about-skill{
+    display:flex;
+    gap:5px;
+    align-items: center;
+    transition: .3s;
+    position: relative;
+  }
+} 
+
+@media(max-width:450px){
+  .progress-bar{
+    width:150px;
+    height: 7px;
+  }
+  .about-skill{
+    display:flex;
+    gap:15px;
+    align-items: center;
+    transition: .3s;
+    position: relative;
+  }
+  .about-skill p{
+    min-width:100px;
+    font-size:18px;
+    font-weight:400;
+  }
+}

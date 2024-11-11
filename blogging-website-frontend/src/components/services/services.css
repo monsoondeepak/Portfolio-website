@@ -1,0 +1,118 @@
+.services{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:80px;
+  margin:50px 140px;
+}
+
+.services-title{
+  position: relative;
+}
+.services-title h1{
+  padding:0px 30px;
+  font-size: 60px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: center;
+}
+.services-format{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:20px;
+  padding:60px;
+  border-radius:10px;
+  border:2px solid rgb(255, 0, 0);
+  transition:0.4s;
+  cursor:pointer;
+  height: 500px;
+}
+
+.services-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:1rem;
+  margin-top: 50px;
+}
+
+.services-format h3{
+  font-size:28px;
+  font-weight: 600;
+}
+.services-format h2{
+  font-size:38px;
+  font-weight: 800;
+  background:linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-format p{
+  color:rgb(57, 188, 254);
+  font-size:16px;
+  line-height: 20px;
+  max-width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-readmore{
+  display:flex;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+  margin-top:20px;
+}
+
+.services-format:hover{
+  border:2px solid #ff00ff;
+  background: linear-gradient(45deg, #3f0028, #582300);
+  transform: scale(1.05);
+  transition: 0.4s;
+  color:white;
+}
+
+
+
+@media(max-width:991px){
+    .services{
+      margin:10px;
+      align-items:start;
+    }
+    .services-title h1{
+      font-size: 20px;
+      text-align: start;
+      margin:50px;
+    }
+    .services-container{
+      display: grid;
+      flex-wrap: wrap;
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:768px){
+  .services-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .services-format{
+    width:310px;
+    height:600px;
+  }
+}
+
+@media(max-width:450px){
+  .services-format{
+    width:310px;
+    height:600px;
+  }
+  
+}
